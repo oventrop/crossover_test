@@ -31,7 +31,7 @@ public class ForCandidatesPage extends BasePage {
 
     public AvailableJobsPage openAvailableJobs() {
         seeAvailableJobs.click();
-        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
         return new AvailableJobsPage(driver);
     }

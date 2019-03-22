@@ -24,8 +24,7 @@ public class SampleTest extends BaseTest {
         Logger.logConsoleMessage("Navigate to 'FOR CANDIDATES' page:");
         ForCandidatesPage forCandidatesPage = mainPage.openForCandidatesPage();
         Assert.assertTrue(forCandidatesPage.isPageLoaded(), "ForCandidates page didn't open.");
-        Assert.assertTrue(forCandidatesPage.getPageTitle().equalsIgnoreCase("For Candidates — Crossover"),
-                "ForCandidates page title is incorrect.");
+        Assert.assertTrue(forCandidatesPage.getPageTitle().equalsIgnoreCase("For Candidates — Crossover"), "ForCandidates page title is incorrect.");
 
         Logger.logConsoleMessage("Navigate to 'Available Jobs' page:");
         forCandidatesPage.scrollPageToTheEnd(15);
